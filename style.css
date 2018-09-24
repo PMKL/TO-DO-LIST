@@ -1,34 +1,79 @@
 /* Luis A. Castellanos Jr. */
 /* For Assgnment HTML site for CISC 375*/
 
-html
-{
+/* Add a black background color to the top navigation */
+
+/*HTML ELEMENTS*/
+
+html {
+	height: 100%;
+	box-sizing: border-box;
 }
 
-body 
-{
-    font-family: QuicksandBook, Helvetica, Arial, sans-serif;
-    text-shadow: #efefef 1px 1px 0px;
-    font-size: 30px;
-    color: #222;
-    background-color: #f8f8f8;
-    background-image: url(http://static.tumblr.com/ybdgkw4/ffzkxsss6/bg-400-paper2.jpg);
-    margin: 5px 0 20px 0;
-    padding: 0;
+body {
+	font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #222;
+	background-color: #f8f8f8;
+	background-image: url(http: //static.tumblr.com/ybdgkw4/ffzkxsss6/bg-400-paper2.jpg);
+		margin: 5px 0 20px 0;
+	padding: 1em;
 }
 
-
-h1
-{
+h1 {
 	font: bold 2rem "Times New Roman";
 }
 
-p
-{
+p {
 	font: Arial, sans-serif;
 }
 
 
-ul, ol
-{
+/* CLASSES */
+
+.small {
+	font-family: "Times Mew Roman";
+	font-size: small;
+	color: #555555;
+	padding: .5em;
+}
+
+.navbar {
+	background-color: #333;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+	float: left;
+	font-family: Arial;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+	background-color: #7808e8;
+	color: white;
+}
+
+/* Keep the footer down */
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: black;
+	color: white;
+	text-align: center;
 }
