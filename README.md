@@ -1,4 +1,4 @@
-# btw
+# TO-DO-LIST
 
 # Luis A. Castellanos 
 
@@ -27,30 +27,30 @@ Date/time added
 Date/time of the deadline
 Category
 Incomplete vs. Complete
-Earn 1 additional point for each item completed below
 
+Earn 1 additional point for each item completed below
 Set the background color of each to do based on its category
 Allow user to add a custom category type (and associated color)
 Allow user to remove to dos
 Add a prompt to ensure the action is desired
 Save data for next time a user visits the page
-Use the JavaScript localStorage object
+    Use the JavaScript localStorage object
 Create a notification when a to do is due in 5 minutes
 Design using HTML elements (i.e. not just an alert message)
 Include a sound as part of the notification
 User should be able to close / dismiss the notification
+
+
 Photo Gallery (20pts)
-
 To earn 15/20 points (grade: C)
-
 Create a table of at least 20 inspirational images
 Careful not to infringe on copyrights!
 Good resources:
 http://publicdomainarchive.com/public-domain-images-high-quality-free-photos/ (Links to an external site.)Links to an external site.
 http://www.publicdomainpictures.net/ (Links to an external site.)Links to an external site.
 When an image is clicked show it large beneath the table
-Earn 1 additional point for each item completed below (unless noted)
 
+Earn 1 additional point for each item completed below (unless noted)
 Allow photos to be clicked and enlarged using the lightbox technique (2 pts)
 See http://sachinchoolur.github.io/lightgallery1.2/demos/ (Links to an external site.)Links to an external site. for a good example
 This can replace the functionality of showing the image below the table
@@ -62,8 +62,9 @@ Add a thumbnail navigation to the lightbox, allowing a user to jump to an image 
 Use CSS3 animations
 Smoothly highlight images that the mouse is hovering over
 Smoothly open and close the lightbox
-About You (5pts)
 
+
+About You (5pts)
 Short bio about yourself (including a photo)
 Description of the tools (HTML, CSS, JavaScript, etc.) you used to create the application
 Video demo of the application (2 - 4 minutes)
