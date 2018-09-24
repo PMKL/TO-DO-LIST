@@ -15,7 +15,6 @@ NOTE: you are not allowed to include JavaScript libraries or CSS style sheets th
 To Do List (20 pts)
 
 To earn 15/20 points (grade: C)
-
 Allow a user to add items to the to do list
 Text description of the task
 Deadline date/time to finish by
@@ -42,12 +41,17 @@ User should be able to close / dismiss the notification
 
 
 Photo Gallery (20pts)
+
 To earn 15/20 points (grade: C)
 Create a table of at least 20 inspirational images
 Careful not to infringe on copyrights!
 Good resources:
-http://publicdomainarchive.com/public-domain-images-high-quality-free-photos/ (Links to an external site.)Links to an external site.
-http://www.publicdomainpictures.net/ (Links to an external site.)Links to an external site.
+
+http://publicdomainarchive.com/public-domain-images-high-quality-free-photos/ (Links to an external site.)
+
+http://www.publicdomainpictures.net/
+
+Links to an external site.
 When an image is clicked show it large beneath the table
 
 Earn 1 additional point for each item completed below (unless noted)
@@ -55,7 +59,7 @@ Allow photos to be clicked and enlarged using the lightbox technique (2 pts)
 See http://sachinchoolur.github.io/lightgallery1.2/demos/ (Links to an external site.)Links to an external site. for a good example
 This can replace the functionality of showing the image below the table
 Use left and right arrow keys to cycle through the images and escape key to exit the lightbox
-Also have left, right, and an X button to click (same funcationality as the keyboard keys)
+Also have left, right, and an X button to click (same functionality as the keyboard keys)
 Add a "play" button in the lightbox to start a slideshow that will cycle to a new image every 10 seconds
 Should smoothly transition (cross-fade)
 Add a thumbnail navigation to the lightbox, allowing a user to jump to an image much later or earlier in the sequence
@@ -69,16 +73,16 @@ Short bio about yourself (including a photo)
 Description of the tools (HTML, CSS, JavaScript, etc.) you used to create the application
 Video demo of the application (2 - 4 minutes)
 Can natively embed or upload to YouTube and embed
-Design (5pts)
 
+
+Design (5pts)
 5 points will be assigned for adhering to good web design practices. This includes styling content (not just using the default), making text scalable, and having an intuitive interface.
 
 Submission
 
- Code should be saved in a private repository on GitHub while working on the project. You should make the repository public on the date the project is due. Your code can be turned into a live web site by following the instructions at https://help.github.com/articles/user-organization-and-project-pages/ (Links to an external site.)Links to an external site.. In order to submit, you should enter the the project's URL for the assignment (in Canvas).
+Code should be saved in a private repository on GitHub while working on the project. You should make the repository public on the date the project is due. Your code can be turned into a live web site by following the instructions at https://help.github.com/articles/user-organization-and-project-pages/ . 
 
+Links to an external site.. In order to submit, you should enter the the project's URL for the assignment (in Canvas).
  
-
 Deadline
-
 This assignment is due Wednesday, September 26 at 3:25pm.
