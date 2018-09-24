@@ -57,7 +57,7 @@ When an image is clicked show it large beneath the table
 Earn 1 additional point for each item completed below (unless noted)
 Allow photos to be clicked and enlarged using the lightbox technique (2 pts)
 See http://sachinchoolur.github.io/lightgallery1.2/demos/ for a good example
-This can replace the functionality of showing the image below the table
+	This can replace the functionality of showing the image below the table
 Use left and right arrow keys to cycle through the images and escape key to exit the lightbox
 Also have left, right, and an X button to click (same functionality as the keyboard keys)
 Add a "play" button in the lightbox to start a slideshow that will cycle to a new image every 10 seconds
