@@ -66,12 +66,39 @@ p {
 	color: white;
 }
 
+/* Gallery Styling */
+
+div.gallery {
+	margin: 5px;
+	border: 3px solid black;
+	float: left;
+	width: 180px;
+}
+
+div.gallery:hover {
+	border: 5px solid white;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	font-family: sans-serif;
+	font-size: small;
+	padding: 15px;
+	text-align: center;
+}
+
 /* Keep the footer down */
 .footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
+
+	font-size: small;
 	padding: 1rem;
 	background-color: black;
 	color: white;
