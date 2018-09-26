@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+<!-- 
 
+To-Do-List HTML page
+Luis A. Castellanos
+CISC 375 
+
+-->
 <html>
 <link rel="stylesheet" href="style.css" />
 
@@ -7,6 +13,7 @@
 	<link rel="shortcut icon" type="png" href="favi.png" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Start of Title -->
 	<title>
 		TO DO LIST
 	</title>
@@ -15,7 +22,7 @@
 <!-- End of Head -->
 
 <body>
-	<script type="text/javascript" src="script.js"></script>
+
 	<!-- Script -->
 	<!-- Navagation Bar -->
 	<div class="navbar">
@@ -27,16 +34,101 @@
 	<h1>
 		TO DO LIST
 	</h1>
-	<p class="small">
-		THE (Un)OFFICIAL UST TO-DO LIST MAKER
-	</p>
-	<div>
+	<table>
+		<tr>
+			<td>
+				<div class="floatLeft">
+					<!--- Space for Styling--->
+				</div>
+			</td>
+			<td>
+				<p class="small">
+					Write your plans out!
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<!--Start of To-Do-List Div -->
+	<div id="myDIV" class="header">
+		<h2>Type down here</h2>
+		<input type="text" id="myInput" placeholder="TODAY I WILL...">
+		<span onclick="newElement()" class="addBtn">Add</span>
 	</div>
 
+	<ul id="myUL">
+		<li>Here you are able to add in goals by typing them in and clicking add</li>
+		<li class="checked">Check off any you have completed by clicking on the item</li>
+		<li>And delete any of the previous ones by clicking on the X button --></li>
+		
+	</ul>
+	<!--End of To-Do-List Div -->
+
+	<script>
+		var myNodelist = document.getElementsByTagName("LI");
+		var i;
+		// The following code will add the X close button by appending it next to the list element
+		for (i = 0; i < myNodelist.length; i++) {
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("\u00D7");
+			span.className = "close";
+			span.appendChild(txt);
+			myNodelist[i].appendChild(span);
+		}
+
+		// If the close button is clicked, it will set the associated list element as none 
+		var close = document.getElementsByClassName("close");
+		var i;
+		for (i = 0; i < close.length; i++) {
+			close[i].onclick = function() {
+				var div = this.parentElement;
+				div.style.display = "none";
+			}
+		}
+
+		// When a list element is clicked
+		//outside of the X button
+		// The list element will call the check class
+		var list = document.querySelector('ul');
+		list.addEventListener('click', function(ev) {
+			if (ev.target.tagName === 'LI') {
+				ev.target.classList.toggle('checked');
+			}
+		}, false);
+
+		// To add a new item, the function NewElement is called 
+		// When the add button is clicked
+		function newElement() {
+			var li = document.createElement("LI");
+			var inputValue = document.getElementById("myInput").value;
+			var t = document.createTextNode(inputValue);
+			li.appendChild(t);
+			if (inputValue === '') {
+				alert("You must write something!");
+			} else {
+				document.getElementById("myUL").appendChild(li);
+			}
+			document.getElementById("myInput").value = "";
+			//Same as before, the X button must be appended to the new element
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("\u00D7");
+			span.className = "close";
+			span.appendChild(txt);
+			li.appendChild(span);
+			//and if closed, set it to none
+			for (i = 0; i < close.length; i++) {
+				close[i].onclick = function() {
+					var div = this.parentElement;
+					div.style.display = "none";
+				}
+			}
+		}
+	</script>
 
 </body>
 <!-- End of Body -->
 
+<!-- Start of Footer -->
 <footer class="footer">
 	<p>
 		Made by LUIS A. CASTELLANOS JR.
@@ -45,5 +137,6 @@
 		CISC 375 Project, 2018
 	</p>
 </footer>
+<!-- End of Footer -->
 
 </html>

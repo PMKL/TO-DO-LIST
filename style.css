@@ -1,14 +1,16 @@
 /* Luis A. Castellanos Jr. */
 /* For Assgnment HTML site for CISC 375*/
 
-/* Add a black background color to the top navigation */
-
 /*HTML ELEMENTS*/
-
 html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+/*Contain elements within box*/
+*{
+	box-sizing: border-box;
 }
 
 body {
@@ -37,22 +39,134 @@ footer {
 	display: block;
 }
 
-/* CLASSES */
+/*To Do list classes*/
+/* Reduce margins and padding */
+ul {
+	margin: 0;
+	padding: 0;
+}
 
+/* Style the list items */
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #bababa;
+	color: white;
+	font-size: 18px;
+	transition: 0.2s;
+
+	/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Set a grey white style */
+ul li:nth-child(odd) {
+	background: #d16060;
+}
+
+/* Darker color hover */
+ul li:hover {
+	background: #3f59e8;
+	color: white;
+}
+
+/* When an item is marked complete, strike and invert color */
+ul li.checked {
+	background: black;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+/* Option to delete with an X button, far right of list */
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: px px px px;
+}
+
+/*Red background when hovering the X button*/
+.close:hover {
+	background-color: red;
+	color: white;
+}
+
+/* Style the header */
+.header {
+	background-color: black;
+	padding: 15px 50px;
+	color: white;
+	text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the input */
+input {
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	width: 75%;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+}
+
+/* Add button style and pointer changes */
+.addBtn {
+	padding: 10px;
+	width: 25%;
+	background: #676767;
+	color: #e8e8e8;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+}
+
+.addBtn:hover {
+	background-color: #00a037;
+}
+/*End of TDL*/
+
+/* Geneal Element classes */
 .floatLeft {
 	float: left;
 	padding: 14px 16px;
 	border-radius: 50px 20px;
-
-
 }
 
 .floatRight {
 	float: right;
 }
 
-.small {
-	font-size: small;
+p.small {
+	font-size: medium;
 }
 
 .navbar {
@@ -60,7 +174,7 @@ footer {
 	overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Style the anchor tags in the Nav bar */
 .navbar a {
 	float: left;
 	font-family: Arial;
@@ -71,21 +185,20 @@ footer {
 	font-size: 16px;
 }
 
-/* Change the color of links on hover */
+/* Tab on nav bar inverts colors when hovered */
 .navbar a:hover {
 	background-color: white;
 	color: black;
 }
 
-/* Add a color to the active/current link */
+/* Different color on navbar tab when it matches the current page */
 .navbar a.active {
-	/*background-color: #7808e8;*/
 	background-color: grey;
-	color: whitesmoke;
+	color: white;
 }
 
+/*Gallery Section*/
 /* Gallery Styling */
-
 .gallery {
 	width: fill;
 	border: 2px solid black;
@@ -103,34 +216,34 @@ footer {
 	height: auto;
 }
 
-/* Animation/Modal Preview for images */
-
+/* Hover animations, one for pointer and photo animation */
 .myImg {
 	cursor: pointer;
-	transition: 0.4s;
+	transition: 0.5s;
 	display: block;
 
 }
 
 .myImg:hover {
-	opacity: 0.4;
+	opacity: 0.5;
 }
-
 
 /**/
 
 /*Light box image size*/
-.display{
+.display {
 	width: 50%;
 	height: auto;
 }
+
 /* Create four equal columns that floats next to eachother */
 .column {
 	float: left;
 	width: 25%;
 }
 
-/*modal and light box classes*/
+/* Modal and lightbox Styles*/
+/*modal classes*/
 .modal {
 	display: none;
 	position: fixed;
@@ -154,7 +267,7 @@ footer {
 	max-width: 1200px;
 }
 
-/* The Close Button */
+/* Close Button styles */
 .close {
 	color: white;
 	position: absolute;
@@ -164,7 +277,12 @@ footer {
 	font-weight: bold;
 }
 
-.close:hover,
+.close:hover {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .close:focus {
 	color: #999;
 	text-decoration: none;
@@ -177,7 +295,22 @@ footer {
 }
 
 /* Next & previous buttons */
-.prev,
+.prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
 .next {
 	cursor: pointer;
 	position: absolute;
@@ -200,15 +333,18 @@ footer {
 	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+/*  Little bit see-through for next and previous */
+.prev:hover {
+	background-color: rgba(0, 0, 0, 0.80);
 }
 
-/* Number text (1/3 etc) */
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.80);
+}
+
+/* Number text (Ex. 01/20 ... 20/20) */
 .numbertext {
-	color: #f2f2f2;
+	color: white;
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
@@ -228,7 +364,6 @@ img.demo {
 }
 
 /*End of Lightbox*/
-
 
 /* Keep the footer down */
 .footer {
