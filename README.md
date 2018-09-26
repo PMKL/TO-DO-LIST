@@ -55,7 +55,9 @@ Links to an external site.
 When an image is clicked show it large beneath the table
 
 Earn 1 additional point for each item completed below (unless noted)
+
 Allow photos to be clicked and enlarged using the lightbox technique (2 pts)
+
 See http://sachinchoolur.github.io/lightgallery1.2/demos/ for a good example
 	This can replace the functionality of showing the image below the table
 Use left and right arrow keys to cycle through the images and escape key to exit the lightbox
