@@ -62,15 +62,15 @@ CISC 375
 		<li>And delete any of the previous ones by clicking on the X button --></li>
 
 	</ul>
-	<!--End of To-Do-List Div -->
-
+	<!-- End of To-Do-List Div -->
+	<!-- Script Starts -->
 	<script>
 		var myNodelist = document.getElementsByTagName("LI");
 		var i;
 		// The following code will add the X close button by appending it next to the list element
 		for (i = 0; i < myNodelist.length; i++) {
 			var span = document.createElement("SPAN");
-			var txt = document.createTextNode("\u00D7");
+			var txt = document.createTextNode("\u00D7"); //
 			span.className = "close";
 			span.appendChild(txt);
 			myNodelist[i].appendChild(span);
@@ -123,8 +123,9 @@ CISC 375
 				}
 			}
 		}
-
+		//end of newElement
 	</script>
+	<!-- End of Script -->
 
 </body>
 <!-- End of Body -->
