@@ -1,8 +1,6 @@
 //Luis C.
 //CISC 375
-//About Section for Assignment 1
-
-//To-Do-List Code
+//JS for Assignment 1
 
 // Open the lightBox/Modal
 //And display it
